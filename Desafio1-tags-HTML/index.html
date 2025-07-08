@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+      <hr />
+    </header>
+
+    <nav>
+      <h2>Índices</h2>
+      <ul>
+        <li><a href="#sobre-html">O que é HTML?</a></li>
+        <li><a href="#acessibilidade">Acessibilidade em HTML5</a></li>
+        <li><a href="#tags-semanticas">Quais são as tags semânticas do HTML5?</a></li>
+        <li><a href="#referencias">Links de referências</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <article>
+        <section>
+          <h2 id="sobre-html">O que é HTML?</h2>
+          <hr />
+          <small><a href="#inicio">(voltar)</a></small>
+
+          <p>
+            O <strong>HTML (HyperText Markup Language)</strong>, ou Linguagem de Marcação de Hipertexto, é a linguagem padrão usada para criar páginas e conteúdos na web.
+            O HTML serve para estruturar o conteúdo de uma página web, como títulos, parágrafos, listas, imagens, links, tabelas, formulários etc.
+          </p>
+
+          <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+            HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web. Outras tecnologias além do HTML geralmente são usadas para descrever a aparência/apresentação (CSS) ou a funcionalidade/comportamento (JavaScript) de uma página da web. "Hipertexto" refere-se aos links que conectam páginas da Web entre si. Ao carregar conteúdo na Internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante ativo na world wide web.
+          </blockquote>
+
+          <p>
+            O HTML funciona por meio de <strong>tags</strong>, que são como <i>etiquetas</i> que envolvem o conteúdo para indicar sua função. 
+            Por exemplo, um texto entre as tags <strong>&lt;p&gt;</strong> e <strong>&lt;/p&gt;</strong> vira um parágrafo, enquanto um texto entre <strong>&lt;h1&gt;</strong> e <strong>&lt;/h1&gt;</strong> se torna um título principal.
+          </p>
+
+          <p>
+            Em resumo, o HTML é a primeira linguagem que <u>qualquer desenvolvedor web precisa aprender</u>. Sem ele, não existiriam sites como os conhecemos hoje. Ele é simples de entender, mas poderoso o suficiente para ser a fundação de tecnologias modernas como frameworks <strong>React</strong>, <strong>Vue.js</strong> e sistemas como <strong>WordPress</strong>.
+          </p>
+        </section>
+
+        <section>
+          <h2 id="acessibilidade">Acessibilidade em HTML5</h2>
+          <hr />
+          <small><a href="#inicio">(voltar)</a></small>
+
+          <p>
+            A acessibilidade na web é a prática de criar sites que possam ser usados por todas as pessoas, incluindo aquelas com 
+            <strong>deficiências visuais, auditivas, motoras ou cognitivas.</strong> O HTML desempenha um papel 
+            <i>fundamental</i> nisso, pois uma estrutura bem organizada e semântica permite que <strong>tecnologias assistivas</strong>, como leitores de tela, interpretem corretamente o conteúdo.
+          </p>
+
+          <blockquote cite="https://www.dio.me/articles/acessibilidade-em-html5-boas-praticas-e-ferramentas-essenciais">
+            Acessibilidade em HTML5 é sobre tornar sites fáceis de usar para todo mundo, incluindo pessoas com deficiências. 
+            Imagina que seu amigo precisa de óculos ou não pode usar o mouse. Acessibilidade ajuda a fazer com que ele ainda 
+            consiga usar o site sem problemas. O HTML5, com sua estrutura semântica aprimorada e novos atributos, desempenha um 
+            papel fundamental na construção de uma web inclusiva. Elementos semânticos são como etiquetas especiais no HTML que explicam o que cada parte do site faz.
+          </blockquote>
+
+          <p>Um site acessível beneficia não apenas pessoas com deficiências, mas também idosos, usuários móveis e até mecanismos de busca.</p>
+        </section>
+
+        <section>
+          <h2 id="tags-semanticas">Quais são as tags semânticas do HTML5?</h2>
+          <hr />
+          <small><a href="#inicio">(voltar)</a></small>
+
+          <p>
+            O HTML (HyperText Markup Language) é a linguagem base da web, e seu funcionamento depende das tags, elementos que definem a 
+            estrutura e o significado do conteúdo em uma página.
+          </p>
+
+          <blockquote cite="https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065">
+            Atualmente o papel da HTML não é apenas estruturar documentos para a web, mas também descrever o significado do conteúdo 
+            presente nesses documentos por meio de tags semânticas. Isso torna o conteúdo mais claro para programadores, browsers e outras engines.
+          </blockquote>
+
+          <h3>&lt;header&gt;</h3>
+          <p>
+            A tag <code>&lt;header&gt;</code> representa o cabeçalho de uma página ou seção. É comum conter logotipos, títulos ou menus de navegação.
+          </p>
+
+          <h3>&lt;nav&gt;</h3>
+          <p>
+            A tag <code>&lt;nav&gt;</code> identifica um bloco de links de navegação, como menus ou índices.
+          </p>
+
+          <h3>&lt;main&gt;</h3>
+          <p>
+            A tag <code>&lt;main&gt;</code> delimita o conteúdo principal da página, ou seja, aquilo que é único em relação às outras páginas do site.
+          </p>
+
+          <h3>&lt;section&gt;</h3>
+          <p>
+            A tag <code>&lt;section&gt;</code> é usada para dividir o conteúdo em seções temáticas, geralmente com um título.
+          </p>
+
+          <h3>&lt;article&gt;</h3>
+          <p>
+            A tag <code>&lt;article&gt;</code> define conteúdo independente e autocontido, como posts de blog, notícias ou tutoriais.
+          </p>
+
+          <h3>&lt;aside&gt;</h3>
+          <p>
+            A tag <code>&lt;aside&gt;</code> indica conteúdos complementares, como barras laterais, citações ou curiosidades.
+          </p>
+
+          <h3>&lt;footer&gt;</h3>
+          <p>
+            A tag <code>&lt;footer&gt;</code> é usada para rodapés, podendo conter informações como autor, data, links ou direitos autorais.
+          </p>
+        </section>
+      </article>
+    </main>
+
+    <footer id="referencias">
+      <h2>Links de referências</h2>
+      
+      <ul>
+        <li><a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank" rel="noopener noreferrer">MDN Web Docs - HTML</a></li>
+        <li><a href="https://www.dio.me/articles/acessibilidade-em-html5-boas-praticas-e-ferramentas-essenciais" target="_blank" rel="noopener noreferrer">DIO - Acessibilidade em HTML5</a></li>
+        <li><a href="https://www.devmedia.com.br/html-semantico-conheca-os-elementos-semanticos-da-html5/38065" target="_blank" rel="noopener noreferrer">DevMedia - HTML Semântico</a></li>
+      </ul>
+
+      <small><a href="#inicio">(voltar para o início)</a></small>
+    </footer>
+  </body>
+</html>
