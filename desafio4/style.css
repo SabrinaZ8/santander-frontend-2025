@@ -1,0 +1,199 @@
+:root {
+    --color-red: #CC0000;
+    --color-black: #000000;
+    --color-light-gray-border: #CCCCCC;
+    --color-light: #F8F8F8;
+    --color-text-gray: #515151;
+    --color-bg-white: #F9F9F9;
+    --color-white: #FFFFFF;
+    --font-roboto: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: var(--color-text-gray);
+    background-color: var(--color-bg-white);
+    font-family: var(--font-roboto);
+    font-size: 0.875rem;
+    overflow-x: hidden;
+}
+header, nav, form, .header-buttons, .header-left, .channel, .channel-infos, .video-actions, .video-actions-btns,
+.video-actions-btns li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    background-color: var(--color-white);
+    width: 100%;
+    height: 56px;
+    padding: 0 24px;
+    justify-content: space-between;
+}
+.header-left, .header-left nav{
+    margin-right: 32px;
+}
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.search-form {
+    height: 40px;
+    max-width: 404px;
+    width: 100%;
+    margin:  0px 10px;
+}
+.search-form input {
+    border: 1px solid var(--color-light-gray-border);
+    padding: 8px;
+    height: 100%;
+    width: 100%;
+}
+.search-form button {
+    background-color: var(--color-light);
+    border: 1px solid var(--color-light-gray-border);
+    padding: 0 16px;
+    height: 100%;
+}
+.header-buttons button {
+    margin-right: 24px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 15px;
+}
+main {
+    margin: 0px 25px 30px 0px;
+    max-width: 952px;
+    width: 100%;
+}
+.thumbnail {
+    display: block;
+    max-width: 952px;
+}
+.thumbnail img{
+    width: 100%;
+    object-fit: contain;
+}
+h1 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+.video-actions {
+    justify-content: start;
+}
+.channel picture {
+    margin-right: 12px;
+}
+.channel-infos button {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    border-radius: 2px;
+    height: 40px;
+    width: 160px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0 42px;
+}
+.video-actions-btns li, span{
+    list-style: none;
+    font-weight: 600;
+    color: var(--color-black);
+    text-wrap: nowrap;
+    margin: 0px 4px;
+}
+.video-description span{
+    display: block;
+    margin: 20px 0;
+    text-wrap: wrap;
+}
+.video-description p {
+    max-width: 510px;
+}
+.video-actions-btns {
+    width: 100%;
+    justify-content: space-between;
+}
+aside {
+    width: 370px;
+    max-width: 370px;
+}
+.recommended-videos {
+    display: flex;
+    width: 370px;
+    margin-bottom: 16px;
+}
+.recommended-videos picture {
+    margin-right: 16px;
+}
+.video-aside-info h2{
+    font-size: 0.875rem;
+}
+.video-aside-info span {
+    display: block;
+    margin: 7px 0;
+    font-weight: normal;
+    color: var(--color-text-gray);
+}
+.video-aside-info p, span {
+    font-size: 0.75rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        margin-right: 0px;
+    }
+    aside {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .video-actions {
+        flex-direction: column;
+        align-items: start;
+    }
+    .video-actions-btns {
+        margin-top: 5px;
+        flex-wrap: wrap;
+    }
+    .recommended-videos {
+        flex: 1;
+        margin-right: 7px;
+    }
+}
+@media screen and (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        height: auto;
+        padding-top: 10px;
+    }
+    .search-form {
+        order: 3;
+        margin: 7px auto 0px auto;
+    }
+    .channel-infos button {
+        text-wrap: nowrap;
+        padding: 4px;
+        margin: 0 15px;
+        width: 120px;
+        height: 30px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .header-left, .header-left nav {
+        margin-right: 10px;
+    }
+}
