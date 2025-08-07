@@ -191,6 +191,9 @@ aside {
         width: 120px;
         height: 30px;
     }
+    .video-description p {
+        max-width: 100%;
+    }
 }
 @media screen and (max-width: 500px) {
     .header-left, .header-left nav {
