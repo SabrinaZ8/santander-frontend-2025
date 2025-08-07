@@ -1,0 +1,139 @@
+:root {
+    --color-light: #F6F6F6;
+    --color-text: #2A232A;
+    --color-white: #FFFFFF;
+    --font-OpenSans: "Open Sans", sans-serif;
+    --font-LuckiestGuy: "Luckiest Guy", cursive;;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: var(--color-text);
+    background-color: var(--color-bg-white);
+    font-family: var(--font-OpenSans);
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+header, section, #section-tech, footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    min-height: 459px;
+    background: url('./assets/images/HeaderBackground.png') no-repeat center center/cover;
+    color: var(--color-white);
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+}
+h1 {
+    font-family: var(--font-LuckiestGuy);
+    font-size: 3.5rem;
+    font-weight: normal;
+}
+header p {
+    margin: 24px 0;
+    max-width: 757px;
+}
+.buttons a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 28px;
+    padding: 10px 23.5px;
+}
+.download-windows {
+    background-color: var(--color-white);
+    color: var(--color-text);
+    margin: 0 16px 16px 0px;
+}
+.open-discord {
+    background-color: var(--color-text);
+    color: var(--color-white);
+}
+picture img {
+    max-width: 100%;
+    height: auto;
+}
+main p {
+    margin: 16px 0;
+}
+section {
+    padding: 40px 24px;
+}
+section:nth-child(even) {
+    background-color: var(--color-light);
+}
+h2 {
+    font-size: 2.5rem;
+}
+.text-content {
+    max-width: 351px;
+}
+picture {
+    margin: 0 16px;
+}
+#section-tech {
+    flex-direction: column;
+    width: 100%;
+}
+#section-tech h2 {
+    font-family: var(--font-LuckiestGuy);
+    font-weight: normal;
+    text-align: center;
+}
+#section-tech p {
+    max-width: 802px;
+}
+footer {
+    height: 134px;
+    background-color: var(--color-text);
+}
+
+@media screen and (max-width: 768px) {
+    h1, #section-tech h2 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 27px 0;
+    }
+    header {
+        text-align: start;
+        align-items: start;
+        min-height: 505px;
+    }
+    section {
+        flex-direction: column;
+    }
+    .section-voice{
+        flex-direction: column-reverse;
+    }
+    .text-content {
+        max-width: 70%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .text-content {
+        max-width: 100%;
+        text-align: start;
+    }
+    h2 {
+        text-align: start;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .buttons a {
+        width: 100%;
+        padding: 16px 23.5px;
+    }
+}
